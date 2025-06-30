@@ -9,7 +9,7 @@ echo
 a=0
 while [ $a == 0 ]
 do
-    ls -1 *.txt *.c *.cpp *.py *.sh > .filelist.txt 2> .filelisterrors.txt
+    ls -1 *.txt *.h *.c *.cpp *.py *.sh > .filelist.txt 2> .filelisterrors.txt
     ~/vimui/filelister.exe
     a=$?
     if [ $a == 0 ]; then
